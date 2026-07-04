@@ -67,7 +67,7 @@ y_test_vistos = df_final[(df_final["RIN"] == 9.9) & (df_final["n_combs"] == n_co
 X_test_nuevos = df_final[(df_final["RIN"] == 9.9) & (df_final["n_combs"] < n_combs_max)].drop(columns=cols_drop)
 y_test_nuevos = df_final[(df_final["RIN"] == 9.9) & (df_final["n_combs"] < n_combs_max)]["porc_ISM"]
 def objective(trial):
-    # Definimos el espacio de búsqueda
+    # Definimos donde queremos que busque
     n_estimators = trial.suggest_int('n_estimators', 100, 1000)
     max_depth = trial.suggest_int('max_depth', 5, 50)
     min_samples_split = trial.suggest_int('min_samples_split', 2, 10)
@@ -85,18 +85,11 @@ def objective(trial):
     score = cross_val_score(model, X_train, y_train, cv=3, scoring='neg_mean_absolute_error').mean()
     return score
 
-# Ejecutamos la optimización
-
-study = optuna.create_study(direction='maximize') # maximize porque neg_MAE es negativo
+study = optuna.create_study(direction='maximize') # maximizamos porque neg_MAE es negativo
 study.optimize(objective, n_trials=50,n_jobs=32)
-fig = optuna.visualization.plot_optimization_history(study)
-fig.write_image("optimization_history.png")
-fig2=optuna.visualization.plot_param_importances(study)
-fig2.write_image("param_importances.png")
 
 # Tras encontrar el mejor modelo:
-mejor_modelo = RandomForestRegressor(n_estimators=987,max_depth=20,
-                                     min_samples_split=3,random_state=42, n_jobs=-1)
+mejor_modelo = RandomForestRegressor(**study.best_params,random_state=42, n_jobs=-1)
 mejor_modelo.fit(X_train, y_train)
 
 predicciones_vistos = mejor_modelo.predict(X_test_vistos)
