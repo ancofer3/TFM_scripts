@@ -13,7 +13,7 @@ la "megatabla"
 
 Versión 1
 Autores: Andrés Colomer Fernández
-Fecha de última modificación: 26/02/2026
+Fecha de última modificación: 16/04/2026
 
 ------------------------------------------------------------------------
 '''

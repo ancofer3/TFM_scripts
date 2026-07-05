@@ -12,11 +12,13 @@ transcritos de referencia de cada muestra (sin repetidos) con sus
 counts, su gen asociado, diff to TSS (y su CV), diff to TTS (y su CV),
 su long media de sus reads y añadiendo dos columnas con el TS y el RIN 
 de la muestra a la que pertenecen. Luego, iremos añadiendo columnas a 
-la tabla poco a poco.
+la tabla poco a poco. Por razones de control posterior, me he complicado
+un poco la vida para agrupar las reads, en vez de por transcrito, por 
+transcrito y numero de exones que cubre la read
 
-Versión 1
+Versión 3
 Autores: Andrés Colomer Fernández
-Fecha de última modificación: 10/11/2025
+Fecha de última modificación: 20/06/2026
 
 ------------------------------------------------------------------------
 '''

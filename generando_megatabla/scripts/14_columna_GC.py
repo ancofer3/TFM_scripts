@@ -2,7 +2,7 @@
 ------------------------------------------------------------------------
 Columna GC
 
-Fichero: 02_columna_GC.py
+Fichero: 24_columna_GC.py
 
 Propósito del programa:
 La idea final es hacer una megatabla con muchas columnas con info 
@@ -10,9 +10,9 @@ asociada a todos los transcritos de referencia que hay para cada
 muestra. En este paso empalmamos la tabla con GC creada en el fichero
 anterior con la megatabla 
 
-Versión 1
+Versión 2
 Autores: Andrés Colomer Fernández
-Fecha de última modificación: 12/11/2025
+Fecha de última modificación: 12/04/2025
 
 ------------------------------------------------------------------------
 '''

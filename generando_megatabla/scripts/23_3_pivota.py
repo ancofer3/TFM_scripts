@@ -1,3 +1,11 @@
+'''
+Pivota
+
+Fichero: 23_3_pivota.py
+
+Propósito del programa:
+Las tablas que estaban en formato long las pivotamos
+'''
 import pandas as pd
 import os
 import glob

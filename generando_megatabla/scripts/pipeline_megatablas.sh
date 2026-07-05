@@ -154,7 +154,7 @@ JOB_12=$(sbatch --parsable \
     --time=01:00:00 \
     --output="logs/paso12_sacaProps_%j.out" \
     --error="logs/paso12_sacaProps_%j.err" \
-    --wrap="$ENV_LOAD && python -u scripts/23_saca_props.py")
+    --wrap="$ENV_LOAD && python -u scripts/22_Z_saca_props.py")
 
 echo "Paso 12 enviado con ID: $JOB_12 (1 CPUs, 32GB RAM)"
 
@@ -167,7 +167,7 @@ JOB_13=$(sbatch --parsable \
     --time=01:00:00 \
     --output="logs/paso13_cuentaCodones_%j.out" \
     --error="logs/paso13_cuentaCodones_%j.err" \
-    --wrap="$ENV_LOAD && python -u scripts/22_cuenta_codones.py")
+    --wrap="$ENV_LOAD && python -u scripts/22_A_cuenta_codones.py")
 
 echo "Paso 13 enviado con ID: $JOB_13 (14 CPUs, 26GB RAM)"
 
@@ -180,7 +180,7 @@ JOB_14=$(sbatch --parsable \
     --time=01:00:00 \
     --output="logs/paso14_columnasCodones_%j.out" \
     --error="logs/paso14_columnasCodones_%j.err" \
-    --wrap="$ENV_LOAD && python -u scripts/22_columnas_codones.py")
+    --wrap="$ENV_LOAD && python -u scripts/22_B_columnas_codones.py")
 
 echo "Paso 14 enviado con ID: $JOB_14 (14 CPUs, 26GB RAM)"
 

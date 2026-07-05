@@ -14,11 +14,11 @@ transcrito para cada TS/RIN.
 La idea es sacar para cada transcrito una lista con el porcentaje de 
 reads que caen en cada cuantil.
 Para cada input, sacamos cada transcrito unico y de ahi sacamos todos
-los diffs_to_gene_TSS. Entonces hay que ver 
+los diffs_to_gene_TSS. 
 
 Versión 1
 Autores: Andrés Colomer Fernández
-Fecha de última modificación: 16/02/2026
+Fecha de última modificación: 16/04/2026
 
 ------------------------------------------------------------------------
 '''

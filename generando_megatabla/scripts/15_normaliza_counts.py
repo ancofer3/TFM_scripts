@@ -8,7 +8,8 @@ Propósito del programa:
 La idea final es hacer una megatabla con muchas columnas con info 
 asociada a todos los transcritos de referencia que hay para cada 
 muestra. En este paso normalizamos los counts por profundidad
-a CPM. También hacemos un filtrado de transcritos con counts bajas
+a CPM. Sacamos los CPMs a nivel de transcrito y de los subgrupos de 
+reads de un mismo transcrito que comparten numero de exones que cubren
 
 Versión 1
 Autores: Andrés Colomer Fernández

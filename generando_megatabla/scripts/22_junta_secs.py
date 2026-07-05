@@ -1,7 +1,7 @@
 '''
 Junta Secs
 
-Fichero: 20_junta_secs.py
+Fichero: 22_junta_secs.py
 
 Propósito del programa:
 Juntamos todas las secuencias que tengan mismo transcript_ID. Los fastas están

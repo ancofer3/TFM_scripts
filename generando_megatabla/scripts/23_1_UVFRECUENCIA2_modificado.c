@@ -1,6 +1,6 @@
 /***********************************************************************/
 /*  U V F R E C U E N C I A 2 . C  :  Cadenas de longitud  = [2, 14]   */
-/*                             Versi�n 1.0                             */
+/*                             Versi�n 2.0                             */
 /*  Analiza cualquier fichero con DNA y da palabras con frecuencia>k   */
 /***********************************************************************/
 /*  1- Codificaci�n utilizada     {A:00, C:01, G:10, T:11}             */
@@ -10,7 +10,7 @@
 /************************************************************************/
 /*       Vicente Arnau Llombart.    9 - VI - 2004                      */
 /************************************************************************/
-
+/*ADAPTADO POR Andrés Colomer Fernández (ultima mod 03/07/2026)*/
 #include <stdio.h>
 #include <stdlib.h>
 #include "string.h"

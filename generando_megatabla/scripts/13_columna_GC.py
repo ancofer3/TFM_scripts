@@ -21,9 +21,9 @@ for muestra in muestras:
         %GC = cuentaGC(secs)
         Añadimos %GC a la tabla con TS, RIN y transcrito
 
-Versión 1
+Versión 2
 Autores: Andrés Colomer Fernández
-Fecha de última modificación: 11/02/2026
+Fecha de última modificación: 11/04/2026
 
 ------------------------------------------------------------------------
 '''

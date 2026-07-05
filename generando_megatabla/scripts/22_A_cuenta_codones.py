@@ -1,3 +1,12 @@
+'''
+Cuenta codones
+
+Fichero: 22_A_cuenta_codones
+
+Propósito del programa:
+Sacamos las frecuencias de los codones y la añadimos a una tabla
+'''
+
 from Bio import SeqIO
 import itertools
 import pandas as pd

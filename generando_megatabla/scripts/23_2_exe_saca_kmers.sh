@@ -1,3 +1,5 @@
+# Para ejecutar El script saca_kmers
+
 #!/bin/bash
 file=$1
 for fich in fastas/*_fusionados.fasta ;do
